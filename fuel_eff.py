@@ -9,11 +9,11 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
-# Step 1: Read the .CSV file for fuel transaction
+# Step 1: Read the excel file for fuel transaction
 st.sidebar.title("Fuel Efficiency Calculator")
 uploaded_file = st.sidebar.file_uploader("Upload your excel file", type="xlsx")
 
-# Step 2: Create an empty field to allow user to insert fuel efficiency factor (E) in KM/Liter
+# Step 2: Create an empty field to allow user to insert fuel efficiency factor in KM/Liter
 efficiency_factor = st.sidebar.number_input("Insert Fuel Efficiency factor in KM/Liter", min_value=0.1, step=0.1)
 
 if uploaded_file is not None:
