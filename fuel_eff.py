@@ -65,7 +65,7 @@ if uploaded_file is not None:
                         df.at[index, 'Distance'] = distance
                         df.at[index, 'Rolling Quantity'] = rolling_quantity
                         df.at[index, 'Fuel Efficiency'] = fuel_efficiency
-                        df.at[index, 'Fuel Usage (litre)'] = fuel_usage
+                        df.at[index, 'Fuel Usage'] = fuel_usage
                         df.at[index, 'Usage Type'] = usage_type
 
                 # Reset Initial Odometer and Initial Quantity after a valid calculation
